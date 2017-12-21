@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme" parent="AppThemeBase">
+        <item name="android:windowActionBar" tools:ignore="NewApi">false</item>
+        <item name="android:windowTitleSize">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="actionBarTheme">@style/ToolbarSearchView</item>
+        <item name="android:textViewStyle">@style/Theme.AppCompat.Light.TextView</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.TextView" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolbarTitle" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_huge_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="ToolbarSearchView" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+        <item name="popupTheme">@style/CustomOverlay</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+        <item name="android:background">@color/primary</item>
+        <item name="background">@color/primary</item>
+        <item name="colorControlActivated">#ffffff</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_marginLeft">@dimen/margin_colossal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_normal_size</item>
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4.0dip</item>
+    </style>
+
+    <style name="CustomOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@null</item>
+        <item name="android:searchIcon" tools:ignore="NewApi">@drawable/search</item>
+        <item name="android:closeIcon" tools:ignore="NewApi">@drawable/search_close</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

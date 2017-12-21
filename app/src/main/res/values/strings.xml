@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Repo Searcher</string>
+    <string name="user_name_hint">Please enter user name</string>
+    <string name="search">Search</string>
+
+    <string name="no_details">No details were found</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_repos">No repositories were found</string>
+    <string name="username_invalid">Invalid username</string>
+
+    <string name="repo_list">Repository list</string>
+
+    <string name="forks_available">forks available</string>
+    <string name="details">Details</string>
+</resources>

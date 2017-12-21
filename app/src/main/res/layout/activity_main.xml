@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_colossal"
+        android:paddingBottom="@dimen/margin_colossal"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_huge_size"
+        android:textCursorDrawable="@android:color/white"
+        android:cursorVisible="true"
+        android:maxLines="1"
+        android:textColorHint="@color/welcome_hint_color"
+        android:hint="@string/user_name_hint"
+        />
+
+    <RelativeLayout
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_colossal"
+            android:gravity="center"
+            android:background="@drawable/primary_pressable"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_big_size"
+            android:text="@string/search"/>
+    </RelativeLayout>
+
+</RelativeLayout>

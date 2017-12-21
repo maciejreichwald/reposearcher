@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#4089ff</color>
+
+    <color name="welcome_hint_color">#bababa</color>
+    <color name="primary_semi_transparent">#793f51b5</color>
+    <color name="white_semi_transparent">#79ffffff</color>
+</resources>
